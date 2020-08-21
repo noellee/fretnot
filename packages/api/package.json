@@ -1,0 +1,14 @@
+{
+  "name": "@fretnot/api",
+  "version": "0.0.0",
+  "description": "Fretnot fretboard visualization API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@fretnot/core": "*"
+  },
+  "author": "Noel Lee",
+  "license": "MIT"
+}
