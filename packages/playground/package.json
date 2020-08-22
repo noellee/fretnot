@@ -1,14 +1,22 @@
 {
   "name": "@fretnot/playground",
   "version": "0.0.0",
+  "type": "script",
   "description": "Fretnot fretboard visualization tool.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "dependencies": {
-    "@fretnot/core": "*"
+    "@fretnot/fretboard": "*"
   },
   "author": "Noel Lee",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "ts-loader": "^8.0.2",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
+    "typescript": "^4.0.2"
+  }
 }

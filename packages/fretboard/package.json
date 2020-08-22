@@ -1,0 +1,20 @@
+{
+  "name": "@fretnot/fretboard",
+  "main": "src/index.ts",
+  "version": "0.0.0",
+  "description": "Fretnot fretboard visualization library.",
+  "scripts": {},
+  "author": "Noel Lee",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.6.1"
+  },
+  "keywords": [
+    "fretboard",
+    "guitar",
+    "chord"
+  ],
+  "devDependencies": {
+    "@types/node": "^14.6.0"
+  }
+}
