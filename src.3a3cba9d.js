@@ -9,4 +9,4 @@ var e=require("./lib/parse-font");exports.parseFont=e,exports.createCanvas=funct
 },{"canvas":"KoRo","./geometry":"onJC"}],"B6dB":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("@fretnot/fretboard");function r(){var r=document.createElement("div"),t=new e.Fretboard("2xx232").beginDrawing().withTitle("D/F#").toDataUrl();return r.innerHTML='<img src="'.concat(t,'"/>'),r}document.body.appendChild(r());
 },{"@fretnot/fretboard":"uVha"}]},{},["B6dB"], null)
-//# sourceMappingURL=/src.3a3cba9d.js.map
+//# sourceMappingURL=src.3a3cba9d.js.map
