@@ -3,18 +3,24 @@
   "main": "src/index.ts",
   "version": "0.0.0",
   "description": "Fretnot fretboard visualization library.",
-  "scripts": {},
+  "repository": "github:noellee/fretnot",
   "author": "Noel Lee",
   "license": "MIT",
+  "scripts": {},
   "dependencies": {
     "canvas": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.6.0"
   },
   "keywords": [
     "fretboard",
     "guitar",
-    "chord"
+    "chords",
+    "music",
+    "api"
   ],
-  "devDependencies": {
-    "@types/node": "^14.6.0"
+  "publishConfig": {
+    "access": "public"
   }
 }
