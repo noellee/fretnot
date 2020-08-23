@@ -22,7 +22,20 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
         FOLDER: packages/playground/dist
-        
+
+    - name: Build @fretnot/api
+      working-directory: packages/api
+      run: npm run build
+
+    - name: Publish @fretnot/api
+      working-directory: packages/api
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: |
+        heroku container:login
+        heroku container:push -a ${{ secrets.HEROKU_APP_NAME }} web
+        heroku container:release -a ${{ secrets.HEROKU_APP_NAME }} web
+
     - name: Publish @fretnot/fretboard
       uses: JS-DevTools/npm-publish@v1
       with:
