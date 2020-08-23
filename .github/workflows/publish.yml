@@ -28,7 +28,6 @@ jobs:
       run: npm run build
 
     - name: Publish @fretnot/api
-      working-directory: packages/api
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
       run: |
