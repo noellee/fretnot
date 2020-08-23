@@ -12,5 +12,6 @@ Fretboard visualization tool & library.
 ## Development
 
 ```bash
+npm install
 npm run bootstrap
 ```

@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "bootstrap": "npx lerna bootstrap",
+    "bootstrap": "lerna bootstrap",
+    "bump": "lerna version",
     "lint": "eslint ."
   },
   "devDependencies": {
